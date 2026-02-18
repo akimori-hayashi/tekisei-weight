@@ -189,14 +189,6 @@ export default function ResultsSection({
     }
   }, [currentWeight, bmi, bmiCategory, fetchAdvice]);
 
-  // 差分テキスト表示用ヘルパー
-  const formatDiff = (diff: number | null): string => {
-    if (diff === null) return "";
-    if (diff > 0) return `-${diff}`;
-    if (diff < 0) return `+${Math.abs(diff)}`;
-    return "0";
-  };
-
   return (
     <div className="space-y-6">
       {/* セクションヘッダー */}

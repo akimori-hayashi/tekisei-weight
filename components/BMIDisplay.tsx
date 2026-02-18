@@ -40,14 +40,6 @@ const categoryStyles: Record<
   },
 };
 
-// BMIスケールの目盛り
-const bmiScale = [
-  { label: "低体重", max: 18.5, color: "bg-blue-400" },
-  { label: "普通", max: 25, color: "bg-green-500" },
-  { label: "過体重", max: 30, color: "bg-yellow-400" },
-  { label: "肥満", max: 40, color: "bg-red-400" },
-];
-
 export default function BMIDisplay({ bmi, bmiCategory }: BMIDisplayProps) {
   const style = categoryStyles[bmiCategory];
 
